@@ -20,9 +20,37 @@ body {
   border-radius: 20px;
 }
 
-.container .hero-img {
+.container .img-hover {
+  position: relative;
+}
+
+.container .img-hover .hero-img {
   width: 100%;
   border-radius: 20px;
+}
+
+.container .img-hover .overlay {
+  position: absolute;
+  background: #00fff7;
+  top: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.container .img-hover .overlay:hover {
+  opacity: 1;
+  background: rgba(0, 255, 247, 0.488);
+}
+
+.container .img-hover .overlay .icon {
+  position: absolute;
+  top: 40%;
+  right: 44%;
 }
 
 .container .nft-card {
@@ -36,6 +64,11 @@ body {
 .container .nft-card .offer .title {
   color: #fff;
   font-size: 23px;
+}
+
+.container .nft-card .offer .title:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .container .nft-card .offer .text {
@@ -95,5 +128,10 @@ body {
 
 .container .nft-card .author .name span {
   color: #fff;
+}
+
+.container .nft-card .author .name span:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

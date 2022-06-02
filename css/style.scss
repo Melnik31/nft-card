@@ -1,0 +1,80 @@
+body{
+    font-family:'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    
+}
+
+.container{
+    position: relative;
+    -webkit-box-shadow: 0px 15px 11px 13px rgba(6,12,20,0.78); 
+    box-shadow: 0px 15px 11px 13px rgba(6,12,20,0.78);
+    border-radius: 20px;
+    .hero-img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .nft-card{
+        border-radius: 20px;
+        background: hsl(216, 50%, 16%);
+        padding: 35px;
+        height: 565px;
+        width: 320px;
+
+        .offer{
+            .title{
+                color: #fff;
+                font-size: 23px;
+            }
+
+            .text{
+                color:hsl(215, 32%, 27%);
+                font-size: 17px;
+            }
+        }
+
+        .price-time{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid hsl(215, 32%, 27%);
+
+            .info{
+                display: flex;
+                align-items: center;
+            }
+            .price{
+                color: hsl(178, 100%, 50%);
+                margin-left: 7px;
+            }
+
+            .text{
+                color: hsl(215, 32%, 27%);
+                margin-left: 10px;
+            }
+        }
+
+        .author{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .avatar{
+                width: 35px;
+                border: solid #fff;
+                border-radius: 50%;
+            }
+
+            .name{
+                color: hsl(215, 32%, 27%);
+                margin-left: 10px;
+                span{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
